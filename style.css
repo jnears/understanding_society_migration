@@ -1,0 +1,186 @@
+@font-face {
+  font-family: ChevinLight;
+  src: url('fonts/chevin-light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/chevin-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/chevin-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/chevin-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/chevin-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+  font-family: ChevinMedium;
+  src: url('fonts/chevin-medium-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/chevin-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/chevin-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/chevin-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/chevin-medium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+}
+
+
+  h1 { 
+  	font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+
+  h1.display-4 { 
+    font-family: Chevinlight, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+  h2 { 
+    font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+ h3 { 
+    font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+ h4 { 
+    font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+ h5 { 
+    font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+ h6 { 
+    font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
+
+/*color*/
+
+.bg-brown-dark {
+    background-color: #776e53;
+}
+
+.bg-green-medium {
+    background-color: #84bf71;
+}
+
+    .site-header{
+  background: transparent;
+  height: 140px;
+  transition: 0.5s ease-in;
+}
+
+.site-header.scrolled {
+  height: 110px;
+  transition: 0.5s ease-in;
+  background: white !important;
+  
+
+}
+
+header {
+  min-height: 60px;
+}
+
+
+.site-header .logo {
+    height: 115px;
+    width: 260px;
+    padding: 16px;
+    padding: 1rem;
+    text-indent: -3000em;
+    overflow: hidden;
+    display: block;
+    background: url(images/ukhls-logo.svg) no-repeat 50% 50%;
+    transition: 0.5s ease-in;
+}
+
+.site-header.scrolled .logo{
+    height: 90px;
+    transition: 0.5s ease-in;
+}
+
+
+main {
+    margin-top: -140px;
+}
+
+
+        .bg-sky {
+          background-image: url("images/bg-sky.jpg");
+ background-color: #cccccc;
+ background-size: cover;
+ min-height: 500px;
+        }
+
+         .bg-map {
+          background-image: url(images/map.png);
+    min-height: 590px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+        }
+.probootstrap-animate {
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.probootstrap-animate-fadeup {
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.probootstrap-animated {
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.crowd {
+    background-image: url("images/crowd.jpeg");
+    background-size: cover;
+ background-color: #cccccc;
+ min-height: 500px;
+}
+
+.trans-white {
+  background: #ffffffd4;
+}
+
+.intro-text {
+    margin-top: 140px;
+}
