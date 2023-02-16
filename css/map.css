@@ -6,9 +6,9 @@
 }
 
 .animated-line {
-    stroke-dasharray: 8;
+    stroke-dasharray: 5;
     stroke-dashoffset: 10;
-    animation: dash 5s linear infinite;
+    animation: dash 12s linear infinite;
 }
 
 @keyframes dash {

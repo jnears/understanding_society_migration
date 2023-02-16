@@ -118,8 +118,15 @@
     // Initialize the chart
     Highcharts.mapChart('map', {
         chart: {
-            map: topology
+            map: topology,
+            backgroundColor: '#fcf1d6'
         },
+         mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+          verticalAlign: 'top'
+        }
+      },
 
         title: {
             text: 'Numbers of Migrants to the UK'
@@ -133,21 +140,7 @@
             pointFormat: '{point.info}'
         },
 
-        mapView: {
-            fitToGeometry: {
-                type: 'MultiPoint',
-                coordinates: [
-                    // Alaska west
-                    [-164, 54],
-                    // Greenland north
-                    [-35, 84],
-                    // New Zealand east
-                    [179, -38],
-                    // Chile south
-                    [-68, -55]
-                ]
-            }
-        },
+        
 
         series: [
             {
@@ -163,83 +156,30 @@
             {
                 type: 'mapline',
                 data: [
+                    
                     {
                         geometry: {
                             type: 'LineString',
                             coordinates: [
-                                [48.516388, 15.552727], // Yemen
-                                [110.004444, -7.491667] // Java
+                                [130, -20], // Australia
+                                [-2,53] // UK
+                                
                             ]
                         },
                         className: 'animated-line',
                         color: '#387d47'
                     },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [48.516388, 15.552727], // Yemen
-                                [55.5325, -21.114444] // La reunion
-                            ]
-                        },
-                        className: 'animated-line',
-                        color: '#387d47'
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [55.5325, -21.114444], // La reunion
-                                [-43.2, -22.9] // Brazil
-                            ]
-                        },
-                        className: 'animated-line',
-                        color: '#387d47'
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [48.516388, 15.552727], // Yemen
-                                [78, 21] // India
-                            ]
-                        },
-                        className: 'animated-line',
-                        color: '#387d47'
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [110.004444, -7.491667], // Java
-                                [4.9, 52.366667] // Amsterdam
-                            ]
-                        },
-                        className: 'animated-line',
-                        color: '#387d47'
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-3, 55], // UK
-                                [-61.030556, 14.681944] // Antilles
-                            ]
-                        },
-                        className: 'animated-line',
-                        color: '#387d47'
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [2.352222, 48.856613], // Paris
-                                [-53, 4] // Guyane
-                            ]
-                        },
-                        className: 'animated-line',
-                        color: '#387d47'
-                    }
+                    // {
+                    //     geometry: {
+                    //         type: 'LineString',
+                    //         coordinates: [
+                    //             [2.352222, 48.856613], // Paris
+                    //             [-53, 4] // Guyane
+                    //         ]
+                    //     },
+                    //     className: 'animated-line',
+                    //     color: '#387d47'
+                    // }
                 ],
                 lineWidth: 2,
                 enableMouseTracking: false
@@ -254,10 +194,11 @@
                 },
                 data: [
                     {
-                        name: 'Yemen',
+                        name: 'UK',
+
                         geometry: {
                             type: 'Point',
-                            coordinates: [48.516388, 15.552727] // Yemen
+                            coordinates: [-2,53] // UK
                         },
                         custom: {
                             arrival: 1414
@@ -267,84 +208,101 @@
                         }
                     },
                     {
-                        name: 'Java',
+                        name: 'Australia',
                         geometry: {
                             type: 'Point',
-                            coordinates: [110.004444, -7.491667] // Java
+                            coordinates: [130, -20] // Australia
                         },
                         custom: {
                             arrival: 1696
-                        }
-                    },
-                    {
-                        name: 'La Reunion',
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [55.5325, -21.114444] // La reunion
-                        },
-                        custom: {
-                            arrival: 1708
-                        }
-                    },
-                    {
-                        name: 'Brazil',
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [-43.2, -22.9] // Brazil
-                        },
-                        custom: {
-                            arrival: 1770
                         },
                         dataLabels: {
                             align: 'right'
                         }
                     },
+
                     {
-                        name: 'India',
+                        name: 'Bangladesh',
                         geometry: {
                             type: 'Point',
-                            coordinates: [78, 21] // India
-                        },
-                        custom: {
-                            arrival: 1670
-                        }
-                    },
-                    {
-                        name: 'Amsterdam',
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [4.9, 52.366667] // Amsterdam
+                            coordinates: [90, 23] // Bangladesh
                         },
                         custom: {
                             arrival: 1696
+                        },
+                        dataLabels: {
+                            align: 'right'
                         }
                     },
+
                     {
-                        name: 'Antilles',
+                        name: 'Canada',
                         geometry: {
                             type: 'Point',
-                            coordinates: [-61.030556, 14.681944] // Antilles
+                            coordinates: [-95, 55] // Canada
                         },
                         custom: {
-                            arrival: 1714
+                            arrival: 1696
+                        },
+                        dataLabels: {
+                            align: 'right'
+                        }
+                    },
+
+                    {
+                        name: 'China',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [110, 35] // China
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                        dataLabels: {
+                            align: 'right'
+                        }
+                    },
+
+                    {
+                        name: 'Cyprus',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [32, 35] // Cyprus
+                        },
+                        custom: {
+                            arrival: 1696
                         },
                         dataLabels: {
                             align: 'right'
                         }
                     },
                     {
-                        name: 'Guyane',
+                        name: 'France',
                         geometry: {
                             type: 'Point',
-                            coordinates: [-53, 4] // Guyane
+                            coordinates: [2, 46] // France
                         },
                         custom: {
-                            arrival: 1714
+                            arrival: 1696
                         },
                         dataLabels: {
                             align: 'right'
                         }
-                    }
+                    },
+                    {
+                        name: 'Germany',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [10, 56] // Germany
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                        dataLabels: {
+                            align: 'right'
+                        }
+                    },
+                    
                 ],
                 enableMouseTracking: false
             }

@@ -13,8 +13,8 @@
 
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://www.beta-understandingsociety.co.uk/migration/css/style.css" />
-    <link rel="stylesheet" href="https://www.beta-understandingsociety.co.uk/migration/css/map.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map.css" />
    
     <title>Understanding Society | Migration to the UK</title>
   
@@ -53,6 +53,11 @@
           <div id="map">
 
           </div>
+        </div>
+      </section>
+        <section class=" p-0 m-0 text-center">
+      
+          <div class="container ">
           
           <div class="row">
             <div class="col">
@@ -66,7 +71,19 @@
               </ul>
             </div>
             <div class="col">
-              <h4 class="text-uppercase text-center">Migrations by Continent</h4>
+              <h4 class="text-uppercase text-center">Migrations by employment area</h4>
+              <ul>
+                <li>Senior management</li>
+                <li>Science and technology</li>
+                <li>Health and social care</li>
+                <li>Education</li>
+                <li>Business, law and administration</li>
+                <li>Arts, culture and media</li>
+                <li>Construction and trades</li>
+                <li>Farming and food production</li>
+                <li>Retail and leisure</li>
+                <li>Cleaning and security</li>
+              </ul>
             </div>
             <div class="col">
               <h4 class="text-uppercase text-center">Migrations by Continent</h4>
@@ -78,157 +95,49 @@
 
       <section class="pt-4 pb-4 bg-grey-medium employment-sector">
         <div class="container">
-          <figure class="highcharts-figure p-3">
-        <button id="btnHealthCare">Health and Care</button>
-<button id="btnEducation">Education</button>
-    <div id="employment-pie"></div>
-    <p class="highcharts-description">
-        Bar chart showing horizontal columns. This chart type is often
-        beneficial for smaller screens, as the user can scroll through the data
-        vertically, and axis labels are easy to read.
-    </p>
-</figure>
-          <h2 class="animate__animated animate__bounce text-center text-uppercase text-white">Employment areas</h2>
-          <div class="row">
+            <h2 class="animate__animated animate__bounce text-center text-uppercase text-white">Employment areas</h2>
 
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Senior Management">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-              
-                  <div class="card-header"><h3 class="h4">Senior Management</h3></div>
-
-                <div class="card-body">
-                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
-              </div>
-            </a>
-            </div>
-
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Science and technology">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Science and technology</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-
-              </div>
-            </a>
-            </div>
-
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Health and social care">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Health and social care</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-            </a>
-            </div>
-          </div>
 
           <div class="row">
-            <div class="col-12 col-sm-4 col-md-4">
-               <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Education">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Education</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             
+            <div class="col-md-4">
+              <div class="d-grid gap-2">
+                  <button class="btn btn-primary" id="btnHealthCare">Health and Care</button>
+                  <button class="btn btn-primary" id="btnEducation">Education</button>
+                  <button class="btn btn-primary" id="btnScienceTechnology">Science and technology</button>
+                  <button class="btn btn-primary" id="btnBusinessLawAdministration">Business, law and administration</button>
                 </div>
-              </div>
-            </a>
             </div>
 
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Business, law and administration">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Business, law and administration</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-            </a>
+            <div class="col-md-8">
+                <figure class="highcharts-figure p-3">
+                 
+                  <div id="employment-pie"></div>
+                  <p class="highcharts-description">Bar chart showing horizontal columns. This chart type is often beneficial for smaller screens, as the user can scroll through the data vertically, and axis labels are easy to read.</p>
+                </figure>
             </div>
 
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Arts, culture and media">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-               <div class="card-header"><h3 class="h4">Arts, culture and media</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-            </div>
-          </a>
+            </div> <!-- end row -->
 
-            
-          </div>
 
-          <div class="row">
-            
 
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Construction and trades">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Construction and trades</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-            </a>
-            </div>
 
-            <div class="col-12 col-sm-4 col-md-4">
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Farming and food production">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Farming and food production</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-            </a>
-            </div>
 
-            <div class="col-12 col-sm-4 col-md-4">
 
-              <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Retail and leisure">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Retail and leisure</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-               
-              </div>
-            </a>
-            </div>
-          </div>
 
-  
 
-          <div class="row">
-            <div class="col-12 col-sm-4 col-md-4">
-               <a href="#" class="mask" data-bs-toggle="modal" data-bs-target="#employmentGraphsModal" data-bs-whatever="Cleaning and security">
-              <div class="card mb-3 probootstrap-animate text-center" data-animate-effect="fadeIn">
-                <div class="card-header"><h3 class="h4">Cleaning and security</h3></div>
-                
-                <div class="card-body">
-                  <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
 
+
+
+
+
+
+
+
+
+        
+        
           
-              </div></a>
-            </div>
-
-
-     </div>
 
 
 
@@ -287,8 +196,8 @@
   </div>
 </div>
   </body>
- <script type="text/javascript" src="https://www.beta-understandingsociety.co.uk/migration/js/custom.js"></script>
- <script type="text/javascript" src="https://www.beta-understandingsociety.co.uk/migration/js/modal.js"></script>
- <script type="text/javascript" src="https://www.beta-understandingsociety.co.uk/migration/js/map.js"></script>
- <script type="text/javascript" src="https://www.beta-understandingsociety.co.uk/migration/js/graph.js"></script>
+ <script type="text/javascript" src="js/custom.js"></script>
+ <script type="text/javascript" src="js/modal.js"></script>
+ <script type="text/javascript" src="js/map.js"></script>
+ <script type="text/javascript" src="js/graph.js"></script>
 </html>
