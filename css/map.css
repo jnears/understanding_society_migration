@@ -1,0 +1,22 @@
+#map {
+    min-width: 320px;
+    max-width: 1800px;
+    height: 1000px;
+    margin: 1em auto;
+}
+
+.animated-line {
+    stroke-dasharray: 8;
+    stroke-dashoffset: 10;
+    animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 100;
+    }
+
+    to {
+        stroke-dashoffset: 20;
+    }
+}

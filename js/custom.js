@@ -48,7 +48,7 @@ function getPointCategoryName(point, dimension) {
 }
  var chart;
 
-Highcharts.chart('containerjon', {
+Highcharts.chart('heatmap', {
 
     chart: {
         type: 'heatmap',
@@ -67,7 +67,18 @@ Highcharts.chart('containerjon', {
     },
 
     yAxis: {
-        categories: ['<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/pidp">pidp</a>', 'mindirect', 'mreturned', 'mlived', 'mintent', 'mintwhen', 'intendukc', 'indeflv', 'age2uk', 'age2uk16', 'j1ukjob', 'j1cojob'],
+        categories: ['<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/pidp">pidp</a>', 
+            '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/mindirect">mindirect</a>', 
+            '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/mreturned">mreturned</a>', 
+            '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/mlived">mlived</a>', 
+            '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/mintent">mintent</a>', 
+            '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/mintwhen">mintwhen</a>', 
+        '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/intendukc">intendukc</a>', 
+        '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/indeflv">indeflv</a>', 
+        '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/age2uk">age2uk</a>', 
+        '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/age2uk16">age2uk16</a>', 
+        '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/j1ukjob">j1ukjob</a>', 
+        '<a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation/variable/j1cojob">j1cojob</a>'],
         title: null,
         reversed: true
     },
@@ -101,8 +112,8 @@ Highcharts.chart('containerjon', {
 
     tooltip: {
         formatter: function () {
-            return '<b>' + getPointCategoryName(this.point, 'x') + '</b> sold <br><b>' +
-                this.point.value + '</b> items on <br><b>' + getPointCategoryName(this.point, 'y') + '</b>';
+            return '<b>' + getPointCategoryName(this.point, 'x') + '</b> <br><b>' +
+                this.point.value + '</b> people migrated <br><b>' + getPointCategoryName(this.point, 'y') + '</b>';
         }
     },
 
@@ -116,12 +127,12 @@ Highcharts.chart('containerjon', {
               [0, 3, 4843], [1, 3, 0], [2, 3, 0], [3, 3, 0], [4, 3, 0], [5, 3, 3044], [6, 3, 1190], [7, 3, 0], [8, 3, 0], [9, 3, 0], [10, 3, 0], [11, 3, 9874],
               [0, 4, 0], [1, 4, 0], [2, 4, 0], [3, 4, 0], [4, 4, 0], [5, 4, 2177], [6, 4, 1169], [7, 4, 0], [8, 4, 1786], [9, 4, 0], [10, 4, 0], [11, 4, 4395],
               [0, 5, 0], [1, 5, 0], [2, 5, 0], [3, 5, 0], [4, 5, 0], [5, 5, 238], [6, 5, 94], [7, 5, 0], [8, 5, 142], [9, 5, 0], [10, 5, 0], [11, 5, 450],
-              [0, 6, 0], [1, 6, 0], [2, 6, 0], [3, 6, 0], [4, 6, 0], [5, 6, 0], [6, 6, 0], [7, 6, 0], [8, 6, 0], [9, 6, 0], [10, 6, 0], [11, 6, 0],
-              [0, 7, 0], [1, 7, 0], [2, 7, 0], [3, 7, 0], [4, 7, 0], [5, 7, 0], [6, 7, 0], [7, 7, 0], [8, 7, 0], [9, 7, 0], [10, 7, 0], [11, 7, 0],
-              [0, 8, 0], [1, 8, 0], [2, 8, 0], [3, 8, 0], [4, 8, 0], [5, 8, 0], [6, 8, 0], [7, 8, 0], [8, 8, 0], [9, 8, 0], [10, 8, 0], [11, 8, 0],
-              [0, 9, 0], [1, 9, 0], [2, 9, 0], [3, 9, 0], [4, 9, 0], [5, 9, 0], [6, 9, 0], [7, 9, 0], [8, 9, 0], [9, 9, 0], [10, 9, 0], [11, 9, 0],
-              [0, 10, 0], [1, 10, 0], [2, 10, 0], [3, 10, 0], [4, 10, 0], [5, 10, 0], [6, 10, 0], [7, 10, 0], [8, 10, 0], [9, 10, 0], [10, 10, 0], [11, 10, 0],
-              [0, 11, 0], [1, 11, 0], [2, 11, 0], [3, 11, 0], [4, 11, 0], [5, 11, 0], [6, 11, 0], [7, 11, 0], [8, 11, 0], [9, 11, 0], [10, 11, 0], [11, 11, 0]
+              [0, 6, 0], [1, 6, 0], [2, 6, 0], [3, 6, 0], [4, 6, 0], [5, 6, 1215], [6, 6, 0], [7, 6, 0], [8, 6, 547], [9, 6, 0], [10, 6, 0], [11, 6, 1752],
+              [0, 7, 0], [1, 7, 0], [2, 7, 0], [3, 7, 0], [4, 7, 0], [5, 7, 1387], [6, 7, 0], [7, 7, 0], [8, 7, 560], [9, 7, 0], [10, 7, 0], [11, 7, 1956],
+              [0, 8, 4624], [1, 8, 0], [2, 8, 0], [3, 8, 0], [4, 8, 0], [5, 8, 2945], [6, 8, 3829], [7, 8, 0], [8, 8, 2586], [9, 8, 0], [10, 8, 0], [11, 8, 10127],
+              [0, 9, 4624], [1, 9, 0], [2, 9, 0], [3, 9, 0], [4, 9, 0], [5, 9, 2961], [6, 9, 3810], [7, 9, 0], [8, 9, 2571], [9, 9, 2571], [10, 9, 0], [11, 9, 10127],
+              [0, 10, 0], [1, 10, 0], [2, 10, 0], [3, 10, 0], [4, 10, 0], [5, 10, 1822], [6, 10, 0], [7, 10, 0], [8, 10, 1580], [9, 10, 0], [10, 10, 0], [11, 10, 3402],
+              [0, 11, 0], [1, 11, 0], [2, 11, 0], [3, 11, 0], [4, 11, 0], [5, 11, 1125], [6, 11, 0], [7, 11, 0], [8, 11, 856], [9, 11, 0], [10, 11, 0], [11, 11, 1981]
               ],
  
 

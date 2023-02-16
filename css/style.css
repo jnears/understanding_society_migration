@@ -1,20 +1,20 @@
 @font-face {
   font-family: ChevinLight;
-  src: url('fonts/chevin-light-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/chevin-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/chevin-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/chevin-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/chevin-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/chevin-light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/chevin-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/chevin-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/chevin-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/chevin-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 
 @font-face {
   font-family: ChevinMedium;
-  src: url('fonts/chevin-medium-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/chevin-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/chevin-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/chevin-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/chevin-medium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/chevin-medium-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/chevin-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/chevin-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/chevin-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/chevin-medium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -42,6 +42,13 @@ body {
  h6 { 
     font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
 
+
+/*elements*/
+
+a.mask {
+    text-decoration: none;
+    color: black;
+}
 /*color*/
 
 .bg-brown-dark {
@@ -50,6 +57,15 @@ body {
 
 .bg-green-medium {
     background-color: #84bf71;
+}
+
+
+.bg-grey-medium {
+    background-color: #838383;
+}
+
+.bg-grey-light {
+    background-color: #bebebe;
 }
 
     .site-header{
@@ -72,14 +88,14 @@ header {
 
 
 .site-header .logo {
-    height: 115px;
-    width: 260px;
+    height: 150px;
+    width: 300px;
     padding: 16px;
     padding: 1rem;
     text-indent: -3000em;
     overflow: hidden;
     display: block;
-    background: url(images/ukhls-logo.svg) no-repeat 50% 50%;
+    background: url(../images/ukhls-logo.svg) no-repeat 50% 50%;
     transition: 0.5s ease-in;
 }
 
@@ -88,22 +104,36 @@ header {
     transition: 0.5s ease-in;
 }
 
+.employment-sector {
+        background-color: #776e53;
 
-main {
-    margin-top: -140px;
+
+
 }
 
 
+.employment-sector .card-header {
+        background-color: #fcf1d6;
+    color: #776e53;
+    
+    border-bottom: 1px solid #f7d173;
+
+}
+/*main {
+    margin-top: -140px;
+}*/
+
+
         .bg-sky {
-          background-image: url("images/bg-sky.jpg");
- background-color: #cccccc;
- background-size: cover;
- min-height: 500px;
+       /*   background-image: url("../images/bg-sky.jpg");
+ background-color: #cccccc;*/
+/* background-size: cover;
+ min-height: 500px;*/
         }
 
          .bg-map {
-          background-image: url(images/map.png);
-    min-height: 590px;
+ /*         background-image: url(../images/map.jpg);
+    min-height: 1000px;*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +201,7 @@ main {
 }
 
 .crowd {
-    background-image: url("images/crowd.jpeg");
+    background-image: url("../images/crowd.jpeg");
     background-size: cover;
  background-color: #cccccc;
  min-height: 500px;
@@ -181,6 +211,6 @@ main {
   background: #ffffffd4;
 }
 
-.intro-text {
+/*.intro-text {
     margin-top: 140px;
-}
+}*/
