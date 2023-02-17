@@ -8,109 +8,107 @@
     const data = [
         {
             'hc-key': 'au',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '107 (0.7%) migrants came from Australia.'
         },
         {
             'hc-key': 'bd',
-            color: '#387d47',
+            // color: '#387d47',
             info: '1199 (8%) migrants came from Bangladesh.'
         },
         {
             'hc-key': 'ca',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '83 (0.6%) migrants came from Canada.'
         },
         {
             'hc-key': 'cn',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '316 (2.1%) migrants came from China/Hong kong.'
         },
         {
             'hc-key': 'cy',
-            color: '#387d47',
+            // color: '#387d47',
             info: '99 (0.7%) migrants came from Cyprus.'
         },
         {
             'hc-key': 'fr',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '154 (1%) migrants came from France.'
         },
         {
             'hc-key': 'de',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '357 (2.4%) migrants came from Germany came from France.'
         },
         {
             'hc-key': 'gh', // not in list
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '325 (2.2%) migrants came from Ghana.'
         },
         {
             'hc-key': 'in',
-            color: '#387d47',
             info: '1801 (12.1%) migrants came from India.'
         }
         ,{
             'hc-key': 'it',
-            color: '#c0ffd5',
             info: '159 (1.1%) migrants came from Italy.'
         },
         {
             'hc-key': 'jm',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '567 (3.8%) migrants came from Jamaica.'
         }
         ,{
             'hc-key': 'ke',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '323 (2.2%) migrants came from Kenya.'
         }
         ,{
             'hc-key': 'nz',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '67 (0.4%) migrants came from New Zealand.'
         },
         {
             'hc-key': 'ng',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '526 (3.5%) migrants came from Nigeria.'
         },
         {
             'hc-key': 'pk',
-            color: '#387d47',
+            // color: '#387d47',
             info: '1638 (11%) migrants came from Pakistan.'
         },{
             'hc-key': 'pl',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '594 (4%) migrants came from Poland.'
         },{
             'hc-key': 'ie',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '462 (3.1%) migrants came from Republic of Ireland.'
         },{
             'hc-key': 'za',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '252 (1.7%) migrants came from South Africa.'
         },{
             'hc-key': 'es',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '102 (0.7%) migrants came from Spain.'
         },{
             'hc-key': 'lk',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '348 (2.3%) migrants came from Sri Lanka.'
         },{
-            'hc-key': 'es',
-            color: '#c0ffd5',
+            'hc-key': 'tr',
+            // color: '#c0ffd5',
             info: '186 (1.2%) migrants came from Turkey.'
         },{
             'hc-key': 'us',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '208 (1.4%) migrants came from USA.'
         },{
             'hc-key': 'ug',
-            color: '#c0ffd5',
+            // color: '#c0ffd5',
             info: '164 (1.1%) migrants came from Uganda.'
         },
     ];
@@ -119,7 +117,7 @@
     Highcharts.mapChart('map', {
         chart: {
             map: topology,
-            backgroundColor: '#fcf1d6'
+            backgroundColor: 'transparent'
         },
          mapNavigation: {
         enabled: true,
@@ -140,6 +138,32 @@
             pointFormat: '{point.info}'
         },
 
+        mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+          verticalAlign: 'bottom'
+        }
+      },
+       exporting: {
+    enabled: false
+  },
+
+        mapView: {
+            fitToGeometry: {
+                type: 'MultiPoint',
+                coordinates: [
+                    // Alaska west
+                    [-164, 54],
+                    // Greenland north
+                    [-35, 84],
+                    // New Zealand east
+                    [179, -38],
+                    // Chile south
+                    [-68, -55]
+                ]
+            }
+        },
+
         
 
         series: [
@@ -147,6 +171,7 @@
                 data,
                 keys: ['hc-key', 'color', 'info'],
                 name: 'Migrants',
+                color: '#c0ffd5',
                 states: {
                     hover: {
                         color: '#a4edba'
@@ -166,8 +191,8 @@
                                 
                             ]
                         },
-                        className: 'animated-line',
-                        color: '#387d47'
+                        // className: 'animated-line',
+                         color: '#387d47'
                     },
                     // {
                     //     geometry: {
@@ -203,9 +228,6 @@
                         custom: {
                             arrival: 1414
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
                     {
                         name: 'Australia',
@@ -216,9 +238,6 @@
                         custom: {
                             arrival: 1696
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
 
                     {
@@ -230,9 +249,6 @@
                         custom: {
                             arrival: 1696
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
 
                     {
@@ -244,9 +260,6 @@
                         custom: {
                             arrival: 1696
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
 
                     {
@@ -258,9 +271,6 @@
                         custom: {
                             arrival: 1696
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
 
                     {
@@ -272,9 +282,6 @@
                         custom: {
                             arrival: 1696
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
                     {
                         name: 'France',
@@ -285,22 +292,201 @@
                         custom: {
                             arrival: 1696
                         },
-                        dataLabels: {
-                            align: 'right'
-                        }
                     },
                     {
                         name: 'Germany',
                         geometry: {
                             type: 'Point',
-                            coordinates: [10, 56] // Germany
+                            coordinates: [10, 51] // Germany
                         },
                         custom: {
                             arrival: 1696
                         },
+                    },
+
+                    {
+                        name: 'Ghana',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [-1, 8] // Ghana
+                        },
                         dataLabels: {
-                            align: 'right'
-                        }
+                            align: 'right',
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'India',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [80, 18] // India
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Italy',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [12, 43] // Italy
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Jamaica',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [-76, 18] // Jamaica
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Kenya',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [38, 0] // Kenya
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'New Zealand',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [170, -43] //  New Zealand
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Nigeria',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [9, 10] //  Nigeria
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Pakistan',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [68, 28] //  Pakistan
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Poland',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [20, 53] //  Poland
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Republic of Ireland',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [-8, 53] //   Republic of Ireland
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'South Africa',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [24, -30] //   South Africa
+                        },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Spain',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [-3, 40] //   Spain
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Sri Lanka',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [81, 8] //   Sri Lanka
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Turkey',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [34, 39] //   Turkey
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'USA',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [-100, 40] //   USA
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
+                    },
+                    {
+                        name: 'Uganda',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [33, 2] //   Uganda
+                        },
+                        dataLabels: {
+                            align: 'right',
+                         },
+                        custom: {
+                            arrival: 1696
+                        },
                     },
                     
                 ],

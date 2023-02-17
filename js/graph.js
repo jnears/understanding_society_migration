@@ -63,7 +63,7 @@ Highcharts.chart('employment-pie', {
 var chart = Highcharts.chart('employment-pie', {
         chart: {
         type: 'pie',
-        backgroundColor: '#fcf1d6'
+        backgroundColor: 'transparent'
     },
     credits: {
         enabled: false
