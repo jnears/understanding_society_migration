@@ -13,7 +13,7 @@
         },
         {
             'hc-key': 'bd',
-            // color: '#387d47',
+            // color: '#f5c54c',
             info: '1199 (8%) migrants came from Bangladesh.'
         },
         {
@@ -28,7 +28,7 @@
         },
         {
             'hc-key': 'cy',
-            // color: '#387d47',
+            // color: '#f5c54c',
             info: '99 (0.7%) migrants came from Cyprus.'
         },
         {
@@ -76,7 +76,7 @@
         },
         {
             'hc-key': 'pk',
-            // color: '#387d47',
+            // color: '#f5c54c',
             info: '1638 (11%) migrants came from Pakistan.'
         },{
             'hc-key': 'pl',
@@ -180,6 +180,7 @@
             },
             {
                 type: 'mapline',
+                color: '#f5c54c',
                 data: [
                     
                     {
@@ -192,26 +193,236 @@
                             ]
                         },
                         // className: 'animated-line',
-                         color: '#387d47'
+                        color: '#f5c54c',
                     },
-                    // {
-                    //     geometry: {
-                    //         type: 'LineString',
-                    //         coordinates: [
-                    //             [2.352222, 48.856613], // Paris
-                    //             [-53, 4] // Guyane
-                    //         ]
-                    //     },
-                    //     className: 'animated-line',
-                    //     color: '#387d47'
-                    // }
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [90, 23], // Bangladesh
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [-95, 55], // Canada
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [110, 35], // China
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [32, 35], // Cyprus
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [2, 46], // France
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [10, 51], // Germany
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [-1, 8], // Ghana
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [80, 18], // India
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [12, 43], // Italy
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [-76, 18], // Jam
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [38, 0], // Kenya
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [170, -43], //  New Zealand
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [9, 10], //  Nigeria
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [68, 28], //  Pakistan
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [20, 53], //  Poland
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [-8, 53], //   Republic of Ireland
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [24, -30], //   South Africa
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [-3, 40], //   Spain
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [81, 8], //   Sri Lanka
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [34, 39], //   Turkey
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [-100, 40], //   USA
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+                    {
+                        geometry: {
+                            type: 'LineString',
+                            coordinates: [
+                                [33, 2], //   Uganda
+                                [-2,53] // UK
+                            ]
+                        },
+                        color: '#f5c54c',
+                    },
+
                 ],
                 lineWidth: 2,
                 enableMouseTracking: false
             },
             {
                 type: 'mappoint',
-                color: '#333',
+                color: '#ef8633',
                 dataLabels: {
                     format: '<b>{point.name}</b><br><span style="font-weight: normal; opacity: 0.5">{point.custom.arrival}</span>',
                     align: 'left',
@@ -225,6 +436,7 @@
                             type: 'Point',
                             coordinates: [-2,53] // UK
                         },
+                        color: '#387d47',
                         custom: {
                             arrival: 1414
                         },
