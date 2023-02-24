@@ -8,7 +8,7 @@
     const data = [
         {
             'hc-key': 'au',
-            // color: '#c0ffd5',
+             //color: '#acd79f',
             info: '107 (0.7%) migrants came from Australia.'
         },
         {
@@ -118,6 +118,7 @@
         chart: {
             map: topology,
             backgroundColor: 'transparent'
+
         },
          mapNavigation: {
         enabled: true,
@@ -127,8 +128,14 @@
       },
 
         title: {
-            text: 'Numbers of Migrants to the UK'
+           text: '',
+           // text: 'Numbers of Migrants to the UK'
         },
+
+        credits: {
+                enabled: false
+            },
+
         legend: {
             enabled: false
         },
@@ -137,6 +144,8 @@
             headerFormat: '<b>{point.key}</b>:<br/>',
             pointFormat: '{point.info}'
         },
+
+
 
         mapNavigation: {
         enabled: true,
@@ -171,258 +180,261 @@
                 data,
                 keys: ['hc-key', 'color', 'info'],
                 name: 'Migrants',
-                color: '#c0ffd5',
+                color: '#beecaf',
                 states: {
                     hover: {
-                        color: '#a4edba'
+                        color: '#46993b'
                     }
-                }
+                },
+
+                borderColor: '#387d47',
+                borderWidth: 0.2,
             },
-            {
+             {
                 type: 'mapline',
                 color: '#f5c54c',
-                data: [
+            //     data: [
                     
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [130, -20], // Australia
-                                [-2,53] // UK
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [130, -20], // Australia
+            //                     [-2,53] // UK
                                 
-                            ]
-                        },
-                        // className: 'animated-line',
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [90, 23], // Bangladesh
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-95, 55], // Canada
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [110, 35], // China
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [32, 35], // Cyprus
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [2, 46], // France
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [10, 51], // Germany
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-1, 8], // Ghana
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [80, 18], // India
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [12, 43], // Italy
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-76, 18], // Jam
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [38, 0], // Kenya
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [170, -43], //  New Zealand
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [9, 10], //  Nigeria
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [68, 28], //  Pakistan
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [20, 53], //  Poland
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-8, 53], //   Republic of Ireland
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [24, -30], //   South Africa
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-3, 40], //   Spain
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [81, 8], //   Sri Lanka
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [34, 39], //   Turkey
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [-100, 40], //   USA
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
-                    {
-                        geometry: {
-                            type: 'LineString',
-                            coordinates: [
-                                [33, 2], //   Uganda
-                                [-2,53] // UK
-                            ]
-                        },
-                        color: '#f5c54c',
-                    },
+            //                 ]
+            //             },
+            //             // className: 'animated-line',
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [90, 23], // Bangladesh
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [-95, 55], // Canada
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [110, 35], // China
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [32, 35], // Cyprus
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [2, 46], // France
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [10, 51], // Germany
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [-1, 8], // Ghana
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [80, 18], // India
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [12, 43], // Italy
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [-76, 18], // Jam
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [38, 0], // Kenya
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [170, -43], //  New Zealand
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [9, 10], //  Nigeria
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [68, 28], //  Pakistan
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [20, 53], //  Poland
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [-8, 53], //   Republic of Ireland
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [24, -30], //   South Africa
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [-3, 40], //   Spain
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [81, 8], //   Sri Lanka
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [34, 39], //   Turkey
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [-100, 40], //   USA
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
+            //         {
+            //             geometry: {
+            //                 type: 'LineString',
+            //                 coordinates: [
+            //                     [33, 2], //   Uganda
+            //                     [-2,53] // UK
+            //                 ]
+            //             },
+            //             //color: '#f5c54c',
+            //         },
 
-                ],
+            //     ],
                 lineWidth: 2,
                 enableMouseTracking: false
             },
             {
                 type: 'mappoint',
-                color: '#ef8633',
+                color: '#387d47',
                 dataLabels: {
                     format: '<b>{point.name}</b><br><span style="font-weight: normal; opacity: 0.5">{point.custom.arrival}</span>',
                     align: 'left',
@@ -447,6 +459,11 @@
                             type: 'Point',
                             coordinates: [130, -20] // Australia
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -457,6 +474,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [90, 23] // Bangladesh
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -469,6 +491,11 @@
                             type: 'Point',
                             coordinates: [-95, 55] // Canada
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -479,6 +506,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [110, 35] // China
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -491,6 +523,11 @@
                             type: 'Point',
                             coordinates: [32, 35] // Cyprus
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -501,6 +538,11 @@
                             type: 'Point',
                             coordinates: [2, 46] // France
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -510,6 +552,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [10, 51] // Germany
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -525,6 +572,11 @@
                         dataLabels: {
                             align: 'right',
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -534,6 +586,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [80, 18] // India
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -545,6 +602,11 @@
                             type: 'Point',
                             coordinates: [12, 43] // Italy
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -555,6 +617,11 @@
                             type: 'Point',
                             coordinates: [-76, 18] // Jamaica
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -564,6 +631,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [38, 0] // Kenya
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -578,6 +650,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -587,6 +664,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [9, 10] //  Nigeria
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -598,6 +680,11 @@
                             type: 'Point',
                             coordinates: [68, 28] //  Pakistan
                         },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -607,6 +694,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [20, 53] //  Poland
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -621,6 +713,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -630,6 +727,11 @@
                         geometry: {
                             type: 'Point',
                             coordinates: [24, -30] //   South Africa
+                        },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
                         },
                         custom: {
                             arrival: 1696
@@ -644,6 +746,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -657,6 +764,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -670,6 +782,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -683,6 +800,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },
@@ -696,6 +818,11 @@
                         dataLabels: {
                             align: 'right',
                          },
+                        marker: {
+                            lineWidth: 0,
+                            symbol: 'mapmarker',
+                            radius: 6
+                        },
                         custom: {
                             arrival: 1696
                         },

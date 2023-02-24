@@ -55,8 +55,25 @@ a.mask {
     background-color: #776e53;
 }
 
+.bg-green-light {
+    background-color: #e3efdd;
+}
+
 .bg-green-medium {
     background-color: #84bf71;
+}
+
+
+.bg-green-medium {
+    background-color: #84bf71;
+}
+
+.text-green-dark {
+    color: #387d47 !important;
+}
+
+.text-green-medium {
+    color: #46993b !important;
 }
 
 
@@ -64,13 +81,22 @@ a.mask {
     background-color: #838383;
 }
 
+
+
 .bg-grey-light {
     background-color: #bebebe;
 }
 
+.bar {
+
+    height: 30px;
+    background: #387d47;
+    display: inline-block;
+}
+
     .site-header{
   background: transparent;
-  height: 140px;
+  height: 160px;
   transition: 0.5s ease-in;
 }
 
@@ -86,6 +112,20 @@ header {
   min-height: 60px;
 }
 
+
+.footer[role=contentinfo] {
+    clear: both;
+    display: block;
+    margin-top: 0;
+    background: #2c2c2c;
+    color: #bcbbbb;
+}
+
+.footer[role=contentinfo] nav.social {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 .site-header .logo {
     height: 150px;
@@ -104,8 +144,28 @@ header {
     transition: 0.5s ease-in;
 }
 
+
+.card {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+
+.card.border-left {
+    border-left: 2px solid #72c267;
+}
+
+
+.card.border-right {
+    border-right: 2px solid #72c267;
+}
+
+
+
+
 .employment-sector {
-        background-color: #776e53;
+        background-color: #fcf1d6;
 
 
 

@@ -31,9 +31,9 @@ $(window).on('scroll', function() {
   checkElementLocation();
 });
 
-$(window).scroll(function(){
-  $('header').toggleClass('scrolled', $(this).scrollTop() > 20);
-  });
+// $(window).scroll(function(){
+//   $('header').toggleClass('scrolled', $(this).scrollTop() > 20);
+//   });
 
 
 
