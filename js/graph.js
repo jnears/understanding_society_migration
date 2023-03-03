@@ -85,7 +85,8 @@ var chart = Highcharts.chart('employment-pie', {
     },
     series: [{
             name: 'Health and Social Care',
-        data: [['Health Professionals',47], ['Therapy Professionals',12], ['Nursing and Midwifery Professionals',59]]
+        data: [['Health Professionals',47], ['Therapy Professionals',12], ['Nursing and Midwifery Professionals',59]],
+        colors: ["#f6d491", "#e6b453", "#bf9441", "#997328"],
     }]
 
 });
@@ -101,6 +102,7 @@ $('#btnEducation').click(function () {
 $('#btnHealthCare').click(function () {
     chart.series[0].setData([['Health Professionals',47], ['Therapy Professionals',12], ['Nursing and Midwifery Professionals',59]]);
     chart.series[0].setName(['Health Professionals', 'Therapy Professionals', 'Nursing and Midwifery Professionals']);
+    chart.series[0].setColor(['red','blue','#ff0000']);
     chart.setTitle({text: "Health and Social Care"});
    // chart.xAxis[0].update({categories: ['kkkkkkkk','Therapy Professionals','lllllllll','jjjjjjjj dfgdf','jjjj']}); 
 

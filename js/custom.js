@@ -101,14 +101,16 @@ Highcharts.chart('heatmap', {
         maxColor: Highcharts.getOptions().colors[0]
     },
 
-    legend: {
-        align: 'right',
-        layout: 'vertical',
-        margin: 0,
-        verticalAlign: 'top',
-        y: 25,
-        symbolHeight: 280
-    },
+    legend:{ enabled:false },
+
+    // legend: {
+    //     align: 'right',
+    //     layout: 'vertical',
+    //     margin: 0,
+    //     verticalAlign: 'top',
+    //     y: 25,
+    //     symbolHeight: 280
+    // },
 
     tooltip: {
         formatter: function () {

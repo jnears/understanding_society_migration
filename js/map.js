@@ -7,13 +7,19 @@
 
     const data = [
         {
+            'hc-key': 'gb',
+             color: '#5797c8',
+           
+        },
+
+        {
             'hc-key': 'au',
              //color: '#acd79f',
             info: '107 (0.7%) migrants came from Australia.'
         },
         {
             'hc-key': 'bd',
-            // color: '#f5c54c',
+            
             info: '1199 (8%) migrants came from Bangladesh.'
         },
         {
@@ -448,10 +454,10 @@
                             type: 'Point',
                             coordinates: [-2,53] // UK
                         },
-                        color: '#387d47',
-                        custom: {
-                            arrival: 1414
-                        },
+                         color: '#000000',
+                        // custom: {
+                        //     arrival: 1414
+                        // },
                     },
                     {
                         name: 'Australia',

@@ -42,6 +42,9 @@ body {
  h6 { 
     font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
 
+    .subtitle { 
+    font-family: ChevinLight, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New" !important; }
+
 
 /*elements*/
 
@@ -75,7 +78,9 @@ a.mask {
 .text-green-medium {
     color: #46993b !important;
 }
-
+.text-grey-dark {
+    color: #5a5a5a !important;
+}
 
 .bg-grey-medium {
     background-color: #838383;
@@ -92,6 +97,16 @@ a.mask {
     height: 30px;
     background: #387d47;
     display: inline-block;
+    position: relative;
+    animation: grow 2s 2s forwards;
+}
+
+.bar span {
+    position: absolute;
+    right: 7px;
+    top: 2px;
+    color: white;
+
 }
 
     .site-header{
@@ -112,6 +127,9 @@ header {
   min-height: 60px;
 }
 
+.btn-group-wrap {
+    text-align: center;
+}
 
 .footer[role=contentinfo] {
     clear: both;
@@ -179,10 +197,45 @@ header {
     border-bottom: 1px solid #f7d173;
 
 }
-/*main {
-    margin-top: -140px;
-}*/
 
+
+
+section.continent .nav-link {
+    color: #387d47;
+}
+
+
+section.employment .btn-outline-primary {
+    color: #4c4c4c;
+    border-color: #f5c54c;
+}
+
+
+section.employment .btn-outline-primary.active, 
+section.employment .btn-outline-primary:hover {
+    color: #4c4c4c;
+    background-color: #f5c54c;
+    border-color: #f5c54c;
+}
+
+
+
+
+    section.employment .btn-check:focus+.btn-outline-primary, 
+    section.employment .btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgb(244 197 76 / 28%);
+
+}
+
+  .bg-education {
+    background: url(../images/bg-employment-education.jpg) no-repeat 50% 50%;
+}
+
+
+@keyframes grow {
+  from { width: 0; }
+  to { width: 100px; }
+}
 
         .bg-sky {
        /*   background-image: url("../images/bg-sky.jpg");
