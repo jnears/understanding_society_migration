@@ -92,6 +92,24 @@ a.mask {
     background-color: #bebebe;
 }
 
+
+
+@media (max-width:768px) {
+   .xscroll {
+   /* background-color: lightblue;
+    border: 1px solid black;*/
+    width: 100%;
+    overflow-x: scroll;
+}
+}
+
+#heatmap {
+
+min-width: 768px;
+/*margin: 10px;*/
+
+}
+
 .bar {
 
     height: 30px;
