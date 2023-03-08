@@ -68,12 +68,15 @@ var chart = Highcharts.chart('employment-pie', {
     credits: {
         enabled: false
     },
+    exporting: {
+    enabled: false
+  },
     title: {
-        text: 'Health and Social Care'
+        text: 'Health and Social Care (20% migrants)'
     },
    
     tooltip: {
-        pointFormat: '{series.name}: fgfgfgfgfgfgf<b>fgfgfgf{point.percentage:.1f}%</b>'
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
     },
 
     plotOptions: {
@@ -84,7 +87,7 @@ var chart = Highcharts.chart('employment-pie', {
         }
     },
     series: [{
-            name: 'Health and Social Care',
+            name: 'Health and Social Care (20% migrants)',
         data: [['Health Professionals',47], ['Therapy Professionals',12], ['Nursing and Midwifery Professionals',59]],
         colors: ["#f6d491", "#e6b453", "#bf9441", "#997328"],
     }]
@@ -93,29 +96,24 @@ var chart = Highcharts.chart('employment-pie', {
 
 $('#btnEducation').click(function () {
     chart.series[0].setData([['Teaching and Educational Professionals',107]]);
-    chart.series[0].setName('Education');
-    chart.setTitle({text: "Education Employment"});
-  //  chart.xAxis[0].update({categories: ['sdfsdf','Therapy Professionals','Nursing and Midwifery Professionals','Thersapy dfgdf','sdfsdfsdfsdfs','sdfsfsdf']}); 
-    chart.redraw();
+    chart.setTitle({text: "Education Employment (30% migrants)"});
 });
 
 $('#btnHealthCare').click(function () {
     chart.series[0].setData([['Health Professionals',47], ['Therapy Professionals',12], ['Nursing and Midwifery Professionals',59]]);
-    chart.series[0].setName(['Health Professionals', 'Therapy Professionals', 'Nursing and Midwifery Professionals']);
-    chart.series[0].setColor(['red','blue','#ff0000']);
-    chart.setTitle({text: "Health and Social Care"});
+    chart.setTitle({text: "Health and Social Care (20% migrants)"});
    // chart.xAxis[0].update({categories: ['kkkkkkkk','Therapy Professionals','lllllllll','jjjjjjjj dfgdf','jjjj']}); 
 
 });
 
 $('#btnScienceTechnology').click(function () {
     chart.series[0].setData([['Natural and Social Science Professionals',11], ['Engineering Professionals',11], ['Information Technology and Telecommunications Professionals',60], ['Conservation and Environment Professionals',1], ['Research and Development Managers',1]]);
-     chart.setTitle({text: "Science and technology"});
+     chart.setTitle({text: "Science and technology (10% migrants)"});
 
 });
 
 $('#btnBusinessLawAdministration').click(function () {
     chart.series[0].setData([['Business, Research and Administrative Professionals',34], ['Legal Professionals',13], ['Architects, Town Planners and Surveyors',7], ['Welfare Professionals',9], ['Librarians and Related Professionals',2], ['Quality and Regulatory Professionals',9]]);
-     chart.setTitle({text: "Business, law and administration"});
+     chart.setTitle({text: "Business, law and administration (5% migrants)"});
 
 });

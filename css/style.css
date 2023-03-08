@@ -24,8 +24,11 @@ body {
     color: #333;
     background-color: #fff;
 }
+.value {
+    font-size: 40px;
+     display: inline;
 
-
+}
   h1 { 
   	font-family: ChevinMedium, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New"; }
 
@@ -86,6 +89,11 @@ a.mask {
     background-color: #838383;
 }
 
+
+
+.bg-blue-light {
+    background-color: #eef5fc;
+}
 
 
 .bg-grey-light {
@@ -256,15 +264,24 @@ section.employment .btn-outline-primary:hover {
 
 }
 
+
   .bg-education {
     background: url(../images/bg-employment-education.jpg) no-repeat 50% 50%;
+    background-size: contain;
+    max-width: 350px;
 }
 
-
-@keyframes grow {
+.person-icon {
+    background: url(../images/person-icon.png) no-repeat ;
+    width: 14px;
+    height: 40px;
+    display: inline-block;
+    
+}
+/*@keyframes grow {
   from { width: 0; }
   to { width: 100px; }
-}
+}*/
 
         .bg-sky {
        /*   background-image: url("../images/bg-sky.jpg");
@@ -280,6 +297,16 @@ section.employment .btn-outline-primary:hover {
     background-position: center;
     background-repeat: no-repeat;
         }
+
+
+
+
+.animateUp, .animateRight {
+    opacity: 0;
+    visibility: hidden; 
+}
+
+
 .probootstrap-animate {
     opacity: 0;
     visibility: hidden; 

@@ -8,7 +8,7 @@
     const data = [
         {
             'hc-key': 'gb',
-             color: '#5797c8',
+             color: '#387d47',
            
         },
 
@@ -452,9 +452,9 @@
 
                         geometry: {
                             type: 'Point',
-                            coordinates: [-2,53] // UK
+                            coordinates: [0,53] // UK
                         },
-                         color: '#000000',
+                         color: '#387d47',
                         // custom: {
                         //     arrival: 1414
                         // },
@@ -471,7 +471,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 107
                         },
                     },
 
@@ -487,7 +487,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 1199
                         },
                     },
 
@@ -503,7 +503,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 83
                         },
                     },
 
@@ -519,7 +519,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 316
                         },
                     },
 
@@ -535,7 +535,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 99
                         },
                     },
                     {
@@ -550,7 +550,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 154
                         },
                     },
                     {
@@ -565,7 +565,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 357
                         },
                     },
 
@@ -584,7 +584,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 325
                         },
                     },
                     {
@@ -599,7 +599,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 1801
                         },
                     },
                     {
@@ -614,7 +614,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 159
                         },
                     },
                     {
@@ -629,7 +629,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 567
                         },
                     },
                     {
@@ -644,7 +644,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 323
                         },
                     },
                     {
@@ -662,7 +662,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 67
                         },
                     },
                     {
@@ -677,7 +677,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 526
                         },
                     },
                     {
@@ -692,7 +692,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 1638
                         },
                     },
                     {
@@ -707,14 +707,14 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 594
                         },
                     },
                     {
                         name: 'Republic of Ireland',
                         geometry: {
                             type: 'Point',
-                            coordinates: [-8, 53] //   Republic of Ireland
+                            coordinates: [-9, 52] //   Republic of Ireland
                         },
                         dataLabels: {
                             align: 'right',
@@ -725,7 +725,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 462
                         },
                     },
                     {
@@ -740,7 +740,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 252
                         },
                     },
                     {
@@ -758,7 +758,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 102
                         },
                     },
                     {
@@ -776,7 +776,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 348
                         },
                     },
                     {
@@ -794,7 +794,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 186
                         },
                     },
                     {
@@ -812,7 +812,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 208
                         },
                     },
                     {
@@ -830,7 +830,7 @@
                             radius: 6
                         },
                         custom: {
-                            arrival: 1696
+                            arrival: 164
                         },
                     },
                     
