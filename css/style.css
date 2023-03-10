@@ -55,6 +55,14 @@ a.mask {
     text-decoration: none;
     color: black;
 }
+
+
+.highlight-light-grey {
+    background: #f7f7f7;
+}
+
+
+
 /*color*/
 
 .bg-brown-dark {

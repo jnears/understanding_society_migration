@@ -30,7 +30,7 @@
     <header class="site-header py-1">
       <nav class="container d-flex flex-column flex-md-row justify-content-between ">
         <div class="d-flex align-items-center justify-content-center">
-          <button type="button" class="btn btn-outline-success" style="">Example button</button>
+          <button type="button" class="btn btn-outline-success" style="">Main website</button>
         </div>
         <a class="logo mx-auto" href="/" title="Home"><span class="sr-only">Understanding Society</span></a>
         <div class="d-flex align-items-center justify-content-center pull-right">
@@ -51,10 +51,10 @@
         <div class="p-3 pt-4">
          
             <h1 class="display-4 fw-normal animate__animated animate__fadeInUp text-green-dark  mb-3">Migration to the United Kingdom</h1>
-            <!-- <p class="lead fw-normal animate__animated animate__fadeInUp">Based on data from Understanding Society. Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> -->
-            <h1 class="text-green-dark animate__animated animate__fadeInUp mb-3"><div class="value" akhi="9000">0</div> people moved to the UK</h1>
-            <p class="lead fw-normal animate__animated animate__fadeInUp animate__delay-2s">But where did they come from and what emploment have they found?<br>The data below is taken from Understanding Society data ...</p>
-            <!-- <h3 class=" fw-normal animate__animated animate__fadeInUp"><b>1000000 migrants</b> to the UK (2000-2022)</h3> -->
+       
+            <h1 class="text-green-dark animate__animated animate__fadeInUp mb-4"><div class="value" akhi="9000">0</div> people moved to the UK</h1>
+            <p class="lead fw-normal animate__animated animate__fadeInUp animate__delay-2s">But where did they <span class="p-1 highlight-light-grey">come from</span> and what <span class="p-1 highlight-light-grey">employment</span> have they found?</p>
+
 
    
         </div>
@@ -194,7 +194,7 @@
                                 <div class="animateUp"><h4 class="card-title text-uppercase text-green-dark">Migrations  by Country</h4></div>
                                 <div class="animateUp">
                                   <p class="card-text pb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    A total of <span class="p-1 highlight-light-grey">9000</span> people have migrated to the UK from <span class="p-1 highlight-light-grey">23</span> countries
                                   </p>
                                 </div>
 
@@ -439,16 +439,25 @@
         <div class="container">
           <div class="animateUp">
             <h2 class="text-center">Employment areas
-               <small class="subtitle text-grey-dark d-block">What employment areas do they work?</small></h2></div>
+               <small class="subtitle text-grey-dark d-block">What employment areas do they work?</small></h2>
+
 
 
             <div class="animateUp">
-              <div class="btn-group-wrap mt-4">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button class="btn btn-outline-primary active" id="btnHealthCare">Health and Care</button>
-                  <button class="btn btn-outline-primary " id="btnEducation">Education</button>
-                  <button class="btn btn-outline-primary" id="btnScienceTechnology">Science and tech</button>
-                  <button class="btn btn-outline-primary" id="btnBusinessLawAdministration">Business, law and admin</button>
+              <div class="btn-group-wrap mt-4 mb-4">
+                <div class="btn-group" role="group" aria-label="Employment sectors">
+                  <button class="btn btn-outline-primary active" id="btnAllSectors">All sectors</button>
+                  <button class="btn btn-outline-primary" id="btn">Arts</button>
+                  <button class="btn btn-outline-primary" id="btnBusiness">Business</button>
+                  <button class="btn btn-outline-primary" id="btnCleaning">Cleaning & security</button>
+                  <button class="btn btn-outline-primary" id="btnConstruction">Construction</button>
+                  <button class="btn btn-outline-primary" id="btnEducation">Education</button>
+                  <button class="btn btn-outline-primary" id="btnFarming">Farming</button>
+                  <button class="btn btn-outline-primary" id="btnHealth">Health</button>
+                  <button class="btn btn-outline-primary" id="btnRetail">Retail</button>
+                  <button class="btn btn-outline-primary" id="btnScience">Science</button>
+                  <button class="btn btn-outline-primary" id="btnManagement">Management</button>
+
                 </div>
               </div>
             </div>
@@ -456,6 +465,7 @@
 
 
           <div class="row">
+        
              
             <div class="col-md-4 ">
               <div class="bg-education h-100">
@@ -504,7 +514,7 @@
 
       </section>
 
-      <section class=" pt-4 mb-4 bg-blue-light">
+      <section class=" pt-4 pb-4 bg-blue-light">
         <div class="container">
        
         <div class="text-center">
@@ -518,7 +528,7 @@
       <div  class="animateUp"><div id="heatmap">
       </div></div>
 
-     <div  class="animateUp"><p class="text-muted float-right">Source: Understanding Society (ISER), waves 1-11 (2009-2020).</p></div>
+     <div  class="animateUp"><p class="text-muted text-center">Source: Understanding Society (ISER), waves 1-11 (2009-2020).</p></div>
      </div>
 
 </figure>
