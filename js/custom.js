@@ -70,7 +70,7 @@ animatedLefts.forEach(animatedLeft => observer.observe(animatedLeft));
 
 
 const counters = document.querySelectorAll('.value');
-const speed = 400;
+const speed = 300;
 
 counters.forEach( counter => {
    const animate = () => {
