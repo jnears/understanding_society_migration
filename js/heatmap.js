@@ -26,7 +26,7 @@ Highcharts.chart('heatmap', {
 
 
     title: {
-        text: 'Sample of migrants ...'
+        text: 'This chart shows where in the dataset researchers can find information from migrant sample members in the various waves of the dataset. '
     },
 
     xAxis: {
@@ -87,7 +87,7 @@ Highcharts.chart('heatmap', {
     },
 
     series: [{
-        name: 'Sample of migrants ...',
+        name: 'This chart shows where in the dataset researchers can find information from migrant sample members in the various waves of the dataset. ',
         borderWidth: 1,
        data: [[0, 0, 9744], [1, 0, 7109], [2, 0, 6184], [3, 0, 5826], [4, 0, 5572], [5, 0, 8393], [6, 0, 7172], [7, 0, 6102], [8, 0, 5148], [9, 0, 4612], [10, 0, 4053], [11, 0, 14932], 
               [0, 1, 4213], [1, 1, 0], [2, 1, 0], [3, 1, 0], [4, 1, 0], [5, 1, 2636], [6, 1, 1733], [7, 1, 0], [8, 1, 0], [9, 1, 0], [10, 1, 0], [11, 1, 9867],
