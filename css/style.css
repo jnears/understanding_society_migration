@@ -146,7 +146,7 @@ min-width: 568px;
 
     .site-header{
   background: transparent;
-  height: 160px;
+
   transition: 0.5s ease-in;
 }
 
@@ -194,6 +194,14 @@ header {
     display: block;
     background: url(../images/ukhls-logo.svg) no-repeat 50% 50%;
     transition: 0.5s ease-in;
+}
+
+
+@media (max-width:767px) {
+   .site-header .logo {
+        height: 92px;
+        width: 220px;
+    }
 }
 
 .site-header.scrolled .logo{
