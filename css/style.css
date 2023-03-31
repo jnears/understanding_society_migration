@@ -182,6 +182,75 @@ header {
     right: 0;
 }
 
+
+
+
+.footer[role=contentinfo] a.esrc {
+    float: left;
+    display: block;
+    width: 304px;
+    height: 81px;
+    overflow: hidden;
+    text-indent: -3000em;
+    margin-right: 40px;
+    margin-right: 2.5rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    background: url(../images/esrc-logo.svg) no-repeat 50% 50%;
+}
+
+
+.footer[role=contentinfo] a.iser {
+    float: left;
+    display: block;
+    width: 93px;
+    height: 81px;
+    overflow: hidden;
+    text-indent: -3000em;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    background: url(../images/iser-logo.svg) no-repeat 50% 50%;
+}
+
+
+
+
+.footer[role=contentinfo] a.uoe {
+    float: left;
+    display: block;
+    width: 222px;
+    height: 81px;
+    overflow: hidden;
+    text-indent: -3000em;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    background: url(../images/university-essex-logo.svg) no-repeat 50% 50%;
+}
+
+
+
+.footer[role=contentinfo] a:link, 
+.footer[role=contentinfo] a:visited {
+    color: #bcbbbb;
+    text-decoration: none;
+}
+
+.footer[role=contentinfo] a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*header*/
 
 .site-header .logo {
