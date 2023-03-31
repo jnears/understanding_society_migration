@@ -166,6 +166,8 @@ header {
     text-align: center;
 }
 
+/*footer*/
+
 .footer[role=contentinfo] {
     clear: both;
     display: block;
@@ -179,6 +181,8 @@ header {
     top: 0;
     right: 0;
 }
+
+/*header*/
 
 .site-header .logo {
     height: 150px;
@@ -197,6 +201,21 @@ header {
     transition: 0.5s ease-in;
 }
 
+
+.navbar-nav>.nav-item:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.navbar-nav>.nav-item:not(:first-child) {
+    margin-left: -1px;
+}
+
+
+.navbar-nav>.nav-item:nth-child(n+3), .navbar-nav>:not(.btn-check)+.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
