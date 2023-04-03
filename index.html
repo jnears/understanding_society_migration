@@ -29,20 +29,9 @@
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <header class="site-header py-1">
       <nav class="container d-flex flex-column flex-md-row justify-content-between ">
-        <div class="d-flex align-items-center justify-content-center">
-          <button type="button" class="btn btn-outline-success" style="">Main website</button>
-        </div>
+       
         <a class="logo mx-auto" href="/" title="Home"><span class="sr-only">Understanding Society</span></a>
-        <div class="d-flex align-items-center justify-content-center pull-right">
-
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-outline-success">Twitter</button>
-            <button class="btn btn-outline-success">Facebook</button>
-          </div>
-
-
-
-        </div>
+        
       </nav>
     </header>
 
@@ -51,27 +40,21 @@
         <div class="p-3 pt-4">
          
             <h1 class="display-4 fw-normal animate__animated animate__fadeInUp text-green-dark  mb-3">Migration to the United&nbsp;Kingdom</h1>
-       
-            <!-- <h1 class="text-green-dark animate__animated animate__fadeInUp mb-4"><div class="value" akhi="9000">0</div> people moved to the UK</h1> -->
+
             <p class="lead fw-normal animate__animated animate__fadeInUp">Understanding Society interviews people who have migrated&nbsp;to&nbsp;the&nbsp;UK.<br>We have been tracking migrant lives since Wave 1 of the Study&nbsp;in&nbsp;2009.</p>
-
-            <p class="fw-normal animate__animated animate__fadeInUp">Over <span class="value p-1 highlight-light-grey" akhi="9000">0</span> people have migrated into our sample since then.</p> 
-            
-            <p class="fw-normal animate__animated animate__fadeInUp animate__delay-2s"><span class="p-1 highlight-light-grey">What countries</span> have they come from ? <span class="p-1 highlight-light-grey">What employment</span> have they found? And how can researchers find them in the <span class="p-1 highlight-light-grey">dataset</span>?</p>
-            
-
-            <!-- <p class="lead fw-normal animate__animated animate__fadeInUp animate__delay-2s">But where did they <span class="p-1 highlight-light-grey">come from</span> and what <span class="p-1 highlight-light-grey">employment</span> have they found?</p> -->
-
-
    
         </div>
       </section>
 
 
       <section class=" p-0 m-0 text-center bg-green-light">
+
+
      
       
           <div class="container ">
+
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Which countries have migrants&nbsp;come&nbsp;from?</h2>
          
           <div id="map">
 
@@ -201,7 +184,7 @@
                                 <div class="animateUp"><h4 class="card-title text-uppercase text-green-dark">Migrants by Country</h4></div>
                                 <div class="animateUp">
                                   <p class="card-text pb-4">
-                                    A total of <span class="p-1 highlight-light-grey">9000</span> people have migrated to the UK from <span class="p-1 highlight-light-grey">23</span> countries
+                                    A total of 2076 people have migrated to the UK from 23 countries
                                   </p>
                                 </div>
 
@@ -550,7 +533,7 @@
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
    
                   <li class="nav-item btn btn-outline-primary active" id="btnAllSectors" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">All sectors</li>
-                  <li class="nav-item btn btn-outline-primary" id="btn"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Arts</li>
+                  <li class="nav-item btn btn-outline-primary" id="btnArts"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Arts</li>
                   <li class="nav-item btn btn-outline-primary" id="btnBusiness"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Business</li>
                   <li class="nav-item btn btn-outline-primary" id="btnCleaning"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Cleaning & security</li>
                   <li class="nav-item btn btn-outline-primary" id="btnConstruction"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Construction</li>
@@ -652,16 +635,25 @@
       
 </div>
 
-        <figure class="highcharts-figure">
+      <figure class="highcharts-figure">
    
-      <div  class="animateUp"><div id="heatmap">
-      </div></div>
+        <div  class="animateUp">
+          <div class="table-responsive">
+            <h5 class="text-center">This chart shows where researchers can find information from migrant sample members</h5>
+          <div id="heatmap"></div>
+        </div>
+        </div>
 
-     <div  class="animateUp"><p class="text-center">The cross wave personal identifier pidp is the same in each wave and can be used to link information about a person in different waves.  Other variables ask about the participants move to the UK (mindirect) and whether they have ever returned to their country of birth (mreturned). Migrant participants are asked whether they plan to stay in the UK or move somewhere else (mintent) and whether they are planning to take UK citizenship (intendukc). The employment history of people who have migrated can track their first job ever (j1cojob) and their first job in the UK (j1ukjob).</p></div>
-     <div  class="animateUp"><p class="text-muted text-center"><i>Source: Understanding Society (ISER), waves 1-11 (2009-2020).</i></p></div>
-     </div>
+        <div  class="animateUp">
+          <p class="text-center">The cross wave personal identifier pidp is the same in each wave and can be used to link information about a person in different waves.  Other variables ask about the participants move to the UK (mindirect) and whether they have ever returned to their country of birth (mreturned). Migrant participants are asked whether they plan to stay in the UK or move somewhere else (mintent) and whether they are planning to take UK citizenship (intendukc). The employment history of people who have migrated can track their first job ever (j1cojob) and their first job in the UK (j1ukjob).
+          </p>
+        </div>
 
-</figure>
+        <div  class="animateUp">
+          <p class="text-muted text-center"><i>Source: Understanding Society (ISER), waves 1-11 (2009-2020).</i></p>
+        </div>
+
+    </figure>
 
 
 
@@ -672,48 +664,32 @@
     </main>
 
 
-<footer class="footer" role="contentinfo">
+<footer class="footer pt-4 pb-4" role="contentinfo">
 
-    <div class="container" >
-      <p class="logos">
-        <a class="esrc" href="http://www.esrc.ac.uk/">ESRC</a>
+    <div class="container overflow-auto" >
+      <div class="row">
+        <div class="col-lg-9 col-md-12">
+          <a class="esrc" href="http://www.esrc.ac.uk/">ESRC</a>
         <a class="iser" href="https://www.iser.essex.ac.uk/">Institute for Social and Economic Research</a>
-        <a class="uoe" href="http://www.essex.ac.uk/">University of Essex</a></p>
-        <p class="small pull-left">The Economic and Social Research Council is the primary funder of the study<br>
-        The Study is led by a team at the Institute for Social and Economic Research (ISER) at the University of Essex.</p>
-
-        <nav class="social">
-          <ul class="list-inline">
-            <li>
-            <a href="https://twitter.com/usociety" aria-label="twitter"><span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-            </a></li>
-          
-            <li>
-            <a href="https://www.youtube.com/channel/UCZYQzqhFDBZof66luum6TKQ/featured?view_as=subscriber" aria-label="You Tube"><span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-            </span>
-            </a></li>
-
-            <li>
-            <a href="https://www.instagram.com/usociety" aria-label="Instagram"><span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-            </span>
-            </a></li>
-          </ul>
-        </nav>
-
-        <ul class="list-inline pull-right-md"><li class="first leaf hidden-xs .hidden-sm"><a href="/news">News</a></li>
-          <li class="leaf hidden-xs .hidden-sm"><a href="/events">Events</a></li>
-          <li class="leaf"><a href="/email/signup">Email sign up</a></li>
-          <li class="leaf"><a href="/information-security-policy">Information Security Policy</a></li>
-          <li class="leaf"><a href="/accessibility">Accessibility</a></li>
-          <li class="last leaf"><a href="/contact">Contact</a></li>
+        <a class="uoe" href="http://www.essex.ac.uk/">University of Essex</a>
+        </div>
+        <div class="col-lg-3 col-md-12">
+         <ul class="list-inline float-lg-end">
+          <li class="list-inline-item"><a href="https://www.understandingsociety.ac.uk">Understanding Society Website</a></li>
         </ul>
+        </div>
+        
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+           <p class="small">The Economic and Social Research Council is the primary funder of the study<br>
+        The Study is led by a team at the Institute for Social and Economic Research (ISER) at the University of Essex.</p>
+        </div>
+      </div>
+
+        
        </div> 
 </footer>
   </body>
