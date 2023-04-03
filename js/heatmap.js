@@ -26,7 +26,7 @@ Highcharts.chart('heatmap', {
 
 
     title: {
-        text: 'This chart shows where in the dataset researchers can find information from migrant sample members in the various waves of the dataset. '
+        text: null
     },
 
     xAxis: {
