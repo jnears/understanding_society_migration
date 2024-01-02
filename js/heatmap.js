@@ -17,7 +17,7 @@ Highcharts.chart('heatmap', {
         backgroundColor: 'transparent'
     },
     credits: {
-        enabled: false
+        enabled: true
     },
 
     exporting: {

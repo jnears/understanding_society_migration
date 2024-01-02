@@ -66,8 +66,9 @@ var chart = Highcharts.chart('employment-pie', {
         backgroundColor: 'transparent'
     },
     credits: {
-        enabled: false
+        enabled: true
     },
+    
     exporting: {
     enabled: false
   },

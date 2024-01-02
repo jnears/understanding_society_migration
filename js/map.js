@@ -139,7 +139,7 @@
         },
 
         credits: {
-                enabled: false
+                enabled: true
             },
 
         legend: {

@@ -405,10 +405,11 @@ section.employment .btn-outline-primary:hover {
 }
 
 .person-icon {
-    background: url(../images/person-icon.png) no-repeat ;
+    background: url(../images/person-icon.svg) no-repeat ;
     width: 14px;
     height: 40px;
     display: inline-block;
+    background-size: 14px 40px;
     
 }
 
